@@ -1,95 +1,47 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-lg-8">
+          <div className="card shadow-lg border-0">
+            <div className="card-body p-5 text-center">
+              <div className="mb-4">
+                <span style={{ fontSize: "5rem" }}>🎵</span>
+              </div>
+              <h1 className="display-4 fw-bold mb-3">Music Playlist Manager</h1>
+              <hr className="my-4" />
+              <div className="mb-4">
+                <h5 className="text-muted mb-3">Project Information</h5>
+                <p className="mb-2">
+                  <strong>Nama:</strong> Rivaldo Marcellino Patty
+                </p>
+                <p className="mb-2">
+                  <strong>NIM:</strong> 535240202
+                </p>
+                <p className="mb-4">
+                  <strong>Topik:</strong> Music Playlist Manager
+                </p>
+              </div>
+              <div className="alert alert-info" role="alert">
+                <h6 className="alert-heading">📝 About This Project</h6>
+                <p className="mb-0">
+                  A web application to manage your personal music playlists. 
+                  Create, edit, and organize your favorite music collections. 
+                  Explore trending music from around the world!
+                </p>
+              </div>
+              <div className="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                <a href="/playlists" className="btn btn-primary btn-lg px-4">
+                  My Playlists
+                </a>
+                <a href="/explore" className="btn btn-outline-secondary btn-lg px-4">
+                  Explore Music
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
